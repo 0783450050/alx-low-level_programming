@@ -39,3 +39,23 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	return (new);
 }
+
+#include "lists.h"
+
+/**
+ * _strlen - Adds node to end of linked list
+ *
+ * @str: Pointer to struct pointer
+ *
+ * Return: length of string
+ */
+int _strlen(const char *str)
+{
+	unsigned int length = 0;
+
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
+}
